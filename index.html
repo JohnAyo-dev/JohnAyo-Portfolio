@@ -644,28 +644,33 @@
 
   /* Meru Vision org chart */
   .vision-grid{grid-template-columns:1fr!important;margin-bottom:56px}
-  .mv{margin-top:8px}
-  .mv-lede{color:var(--muted);max-width:620px;margin:0 0 28px;font-size:.92rem}
+  .mv{margin:8px auto 0;max-width:1180px;padding:32px clamp(16px,3vw,38px);border:1px solid var(--line);border-radius:28px;background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.012));box-shadow:0 24px 70px rgba(0,0,0,.24)}
+  .mv-lede{color:var(--muted);max-width:660px;margin:0 0 34px;font-size:.92rem}
   .mk{display:block;flex:none;width:30px;height:24px;background:var(--c,#fff);clip-path:polygon(0 100%,32% 8%,52% 58%,68% 26%,100% 100%)}
-  .mv-root,.mv-box{display:flex;align-items:center;gap:12px;border:1px solid var(--c,rgba(255,255,255,.35));border-radius:20px;padding:14px 20px;background:rgba(255,255,255,.04);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 0 16px color-mix(in srgb,var(--c,#fff) 22%,transparent)}
-  .mv-root{width:fit-content;margin:0 auto;padding:18px 34px;position:relative;--c:#fff}
-  .mv-root .mk{width:44px;height:34px}
-  .mv b{display:block;font:700 1.15rem 'Chakra Petch',sans-serif;letter-spacing:.2em;line-height:1.1}
-  .mv span{display:block;font:500 .66rem 'Poppins',sans-serif;letter-spacing:.24em}
-  .mv-root::after{content:"";position:absolute;left:50%;top:100%;height:28px;border-left:1px solid rgba(255,255,255,.3)}
-  .mv-row{display:grid;grid-template-columns:1.5fr 1fr 1.3fr .9fr;margin-top:28px}
-  .mv-col{position:relative;padding:28px 8px 0}
-  .mv-col::before{content:"";position:absolute;top:0;left:50%;height:28px;border-left:1px solid var(--c)}
-  .mv-col::after{content:"";position:absolute;top:0;left:0;right:0;border-top:1px solid rgba(255,255,255,.22)}
-  .mv-col:first-child::after{left:50%}.mv-col:last-child::after{right:50%}
-  .mv-box b{font-size:.95rem}
-  .mv-kids{display:grid;gap:8px;margin-top:22px;position:relative}
-  .mv-kids::before{content:"";position:absolute;left:50%;top:-22px;height:22px;border-left:1px solid var(--c)}
-  .mv-kids.k3{grid-template-columns:repeat(3,1fr)}.mv-kids.k2{grid-template-columns:repeat(2,1fr)}.mv-kids.k1{grid-template-columns:1fr}
-  .mv-box.sub{padding:12px 16px}
-  .mv-t{border:1px solid var(--c);border-radius:16px;padding:22px 4px 14px;text-align:center;font:600 .68rem 'Poppins',sans-serif;letter-spacing:.06em;text-transform:uppercase;background:rgba(255,255,255,.035);position:relative;box-shadow:0 0 12px color-mix(in srgb,var(--c) 20%,transparent)}
+  .mv-root,.mv-box{display:flex;align-items:center;gap:14px;border:1px solid color-mix(in srgb,var(--c) 75%,transparent);border-radius:18px;padding:16px 18px;background:linear-gradient(135deg,color-mix(in srgb,var(--c) 10%,rgba(13,15,18,.94)),rgba(255,255,255,.025));box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 10px 28px rgba(0,0,0,.18),0 0 24px color-mix(in srgb,var(--c) 12%,transparent)}
+  .mv-root{width:max-content;min-width:250px;justify-content:center;margin:0 auto;padding:20px 34px;position:relative;--c:#fff}
+  .mv-root .mk{width:42px;height:32px}
+  .mv b{display:block;font:700 1.05rem 'Chakra Petch',sans-serif;letter-spacing:.16em;line-height:1.1}
+  .mv span{display:block;margin-top:4px;font:500 .62rem 'Poppins',sans-serif;letter-spacing:.2em;color:var(--muted)}
+  .mv-root span{color:rgba(255,255,255,.72)}
+  .mv-root::after{content:"";position:absolute;left:50%;top:100%;height:24px;border-left:1px solid rgba(255,255,255,.3)}
+  .mv-row{display:grid;grid-template-columns:1.35fr .9fr 1.2fr .9fr;gap:14px;margin-top:24px;position:relative}
+  .mv-col{position:relative;min-width:0;padding:24px 0 0}
+  .mv-col::before{content:"";position:absolute;top:0;left:50%;height:24px;border-left:1px solid var(--c)}
+  .mv-row::before{content:"";position:absolute;top:0;left:12%;right:12%;border-top:1px solid rgba(255,255,255,.25)}
+  .mv-col::after{content:"";position:absolute;top:0;left:50%;right:auto;width:0;border:0}
+  .mv-box{min-height:76px;padding:13px 12px;gap:10px}
+  .mv-box .mk{width:28px;height:22px}
+  .mv-box b{font-size:.85rem;letter-spacing:.1em}
+  .mv-box span{font-size:.52rem;letter-spacing:.1em;overflow-wrap:anywhere}
+  .mv-kids{display:grid;gap:8px;margin-top:14px;position:relative}
+  .mv-kids::before{content:"";position:absolute;left:50%;top:-14px;height:14px;border-left:1px solid var(--c)}
+  .mv-kids.k3{grid-template-columns:repeat(3,minmax(0,1fr))}.mv-kids.k2{grid-template-columns:repeat(2,minmax(0,1fr))}.mv-kids.k1{grid-template-columns:1fr}
+  .mv-box.sub{padding:12px 14px}
+  .mv-t{min-width:0;border:1px solid color-mix(in srgb,var(--c) 72%,transparent);border-radius:14px;padding:16px 4px 10px;text-align:center;font:600 .62rem 'Poppins',sans-serif;letter-spacing:.04em;text-transform:uppercase;background:linear-gradient(145deg,color-mix(in srgb,var(--c) 10%,rgba(13,15,18,.9)),rgba(255,255,255,.02));position:relative;box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 8px 18px rgba(0,0,0,.15)}
   .mv-t::after{content:"";display:block;width:16px;height:2px;background:var(--c);margin:8px auto 0;border-radius:2px}
-  @media(max-width:860px){.mv-row{grid-template-columns:1fr;gap:26px;margin-top:24px}.mv-col::before,.mv-col::after,.mv-root::after{display:none}.mv-col{padding-top:0}}
+  @media(max-width:900px){.mv-row{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.mv-row::before,.mv-col::before,.mv-root::after,.mv-kids::before{display:none}.mv-col{padding:0}.mv-col:not(:last-child){border-top:1px solid color-mix(in srgb,var(--c) 55%,transparent);padding-top:14px}.mv-col:last-child{border-top:1px solid color-mix(in srgb,var(--c) 55%,transparent);padding-top:14px}}
+  @media(max-width:560px){.mv{padding:24px 14px;border-radius:22px}.mv-root{min-width:0;width:100%}.mv-row{grid-template-columns:1fr;gap:14px}.mv-kids.k3{grid-template-columns:repeat(3,minmax(0,1fr))}.mv-t{font-size:.58rem;padding-inline:2px}.mv-box{min-height:68px}}
 </style>
 </head>
 <body>
@@ -795,6 +800,12 @@
         </div>
       </div>
 
+      <div class="game-card">
+        <span class="gc-tag">2D Shooter / Web Game</span>
+        <h3>NullWave</h3>
+        <p>A 2D shooter web game.</p>
+        <div class="chip-row"><span class="chip">Web game</span></div>
+      </div>
 
       <div class="game-card">
         <div class="shot">
@@ -973,6 +984,12 @@
           <tr><td class="proj">What The F***?!? <span class="co">/ Meru Games</span></td><td class="type">Game</td><td>Story-driven browser game concept.</td></tr>
           <tr><td class="proj">KUPP.fun</td><td class="type">Social Platform</td><td>Real-time platform concept connecting creators, models and clients.</td></tr>
           <tr><td class="proj">PodHaus</td><td class="type">Sales Platform</td><td>Ipod Web Sales Platform</td></tr>
+          <tr><td class="proj">Xtra</td><td class="type">Streaming Platform</td><td>Streaming platform concept.</td></tr>
+          <tr><td class="proj">NullWave</td><td class="type">Game</td><td>2D shooter web game.</td></tr>
+          <tr><td class="proj">GlamourHouse</td><td class="type">Fashion Platform</td><td>Covenant University platform for fashion-oriented people.</td></tr>
+          <tr><td class="proj">Harvast</td><td class="type">Agriculture</td><td>Tool for African farmers.</td></tr>
+          <tr><td class="proj">MeruQuest</td><td class="type">Productivity</td><td>To-do list.</td></tr>
+          <tr><td class="proj">LinkUp</td><td class="type">Scheduling</td><td>Scheduling and meeting app for people with different schedules.</td></tr>
         </tbody>
       </table>
     </div>

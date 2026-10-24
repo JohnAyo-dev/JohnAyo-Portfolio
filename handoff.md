@@ -108,3 +108,13 @@ Open `index.html` directly in a browser. No server needed.
 
 ## Update 7 (Sep 30 2026)
 - Robot removed (markup, CSS, JS). Hero portrait is now `avatar-ascii.js` (characters . - + = repelling the mouse). Synced with owner edits: status pill removed, Coming Soon card added.
+
+## Update 8 (Oct 25 2026)
+- Added Xtra, NullWave, GlamourHouse, Harvast, MeruQuest, and LinkUp to the Selected Projects index using the user's TODO descriptions.
+- Replaced the completed TODO list with a concise completion record. No images or unsupported build claims were added.
+
+## Update 9 (Oct 25 2026)
+- Added NullWave as a Game Worlds card, using the TODO description and no project image.
+
+## Update 10 (Oct 25 2026)
+- Refreshed the Meru hierarchy chart styling with clearer division cards, connectors, spacing, and responsive layouts. Kept the existing group structure and reference-chart division colors.
