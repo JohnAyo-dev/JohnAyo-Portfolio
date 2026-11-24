@@ -118,3 +118,11 @@ Open `index.html` directly in a browser. No server needed.
 
 ## Update 10 (Oct 25 2026)
 - Refreshed the Meru hierarchy chart styling with clearer division cards, connectors, spacing, and responsive layouts. Kept the existing group structure and reference-chart division colors.
+
+## Update 11 (Nov 24 2026)
+- Added focused small-screen refinements in `index.html`: compact section spacing, a horizontally scrollable floating nav with larger tap targets, improved hero and stat readability, single-column stack tiles and project lists, and tighter org-chart layout on narrow screens.
+- Preserved the desktop layout, section ids, and existing motion settings.
+
+## Update 12 (Nov 24 2026)
+- Updated `index.html`'s visible portfolio information to match `reference.html`: profile summary, current work, project descriptions and statuses, technical capabilities, education/CTO details, and Meru planning context.
+- Kept the existing index markup patterns, styles, visual effects and JavaScript behavior; translated the reference content into the existing sections and cards.

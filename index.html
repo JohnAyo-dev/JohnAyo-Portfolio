@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>JohnAyo Okeyode — Software Engineer, Product Builder & Founder</title>
+<title>JohnAyo Okeyode | Software Engineer and Product Builder</title>
+<meta name="description" content="JohnAyo Okeyode, Computer Science student at Covenant University and founder of Meru Technologies. Full-stack products, developer tools, AI integration and browser games.">
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Roboto:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -671,6 +672,47 @@
   .mv-t::after{content:"";display:block;width:16px;height:2px;background:var(--c);margin:8px auto 0;border-radius:2px}
   @media(max-width:900px){.mv-row{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.mv-row::before,.mv-col::before,.mv-root::after,.mv-kids::before{display:none}.mv-col{padding:0}.mv-col:not(:last-child){border-top:1px solid color-mix(in srgb,var(--c) 55%,transparent);padding-top:14px}.mv-col:last-child{border-top:1px solid color-mix(in srgb,var(--c) 55%,transparent);padding-top:14px}}
   @media(max-width:560px){.mv{padding:24px 14px;border-radius:22px}.mv-root{min-width:0;width:100%}.mv-row{grid-template-columns:1fr;gap:14px}.mv-kids.k3{grid-template-columns:repeat(3,minmax(0,1fr))}.mv-t{font-size:.58rem;padding-inline:2px}.mv-box{min-height:68px}}
+
+  /* Small-screen spacing and navigation */
+  @media(max-width:560px){
+    html{scroll-padding-top:104px}
+    .wrap{padding-inline:20px}
+    section{padding:64px 0}
+    .section-lede{margin-bottom:24px}
+    nav{top:10px;width:calc(100% - 20px)}
+    nav .nav-in{gap:4px 12px;padding:9px 14px!important;border-radius:22px}
+    .brand{font-size:.94rem}
+    .nav-links{order:3;width:100%;gap:2px;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;padding:3px 0 1px}
+    .nav-links::-webkit-scrollbar{display:none}
+    .nav-links li{flex:0 0 auto}
+    .nav-links a{display:block;padding:8px 10px;font-size:.62rem}
+    .hero{min-height:100svh;padding:126px 0 28px!important;align-items:center}
+    .hero .wrap{padding-inline:20px}
+    .player-name{font-size:clamp(2.6rem,14vw,4rem)!important}
+    .player-class{font-size:.76rem;line-height:1.6}
+    .player-meta{gap:8px 16px;margin-bottom:18px}
+    .hero-quote{padding-left:14px;line-height:1.55}
+    .btn-row{gap:8px}
+    .btn{min-height:42px;padding:10px 13px}
+    .stat-row{gap:8px!important}
+    .stat{padding:12px!important;min-width:0}
+    .stat .l{font-size:.58rem;line-height:1.5}
+    .about-log,.quest{padding:22px 20px}
+    .ach{grid-template-columns:38px minmax(0,1fr);gap:12px;padding:16px 0}
+    .ach-icon{width:36px;height:36px}
+    #stack .inv-grid{grid-template-columns:minmax(0,1fr);gap:12px}
+    #stack .inv-slot,#stack .inv-slot:last-child{grid-column:auto;min-height:0;padding:18px}
+    .solar{width:min(100%,320px)}
+    .plist{columns:1}
+    .mv-kids.k3{grid-template-columns:repeat(2,minmax(0,1fr))}
+    footer{padding:32px 0 48px}
+  }
+  @media(max-width:360px){
+    .wrap,.hero .wrap{padding-inline:16px}
+    .nav-links a{padding-inline:8px;font-size:.58rem}
+    .stat{padding:10px!important}
+    .stat .n{font-size:1.25rem}
+  }
 </style>
 </head>
 <body>
@@ -699,29 +741,29 @@
 <header class="hero">
   <div class="wrap">
     <div class="hero-frame">
-      <span class="eyebrow" style="margin-bottom:24px;">Character Select — Player One</span>
+      <span class="eyebrow" style="margin-bottom:24px;">Software Engineer · Product Builder</span>
       <div class="hero-top">
         <div>
-          <h1 class="player-name">JohnAyo</h1>
-          <p class="player-class">Software Engineer // Product Builder // Founder</p>
+          <h1 class="player-name">JohnAyo Okeyode</h1>
+          <p class="player-class">Software Engineer // Product Builder // Founder, Meru Technologies</p>
         </div>
       </div>
       <div class="player-meta">
         <span><b>Based in:</b> Nigeria</span>
         <span><b>Studying:</b> Computer Science, Covenant University</span>
-        <span><b>Building:</b> Meru Technologies</span>
+        <span><b>Building:</b> Duka.cu, Codify and browser games</span>
       </div>
-      <p class="hero-quote">Computer Science student, software engineer and product builder building AI systems, web products, games and experimental software under Meru.</p>
+      <p class="hero-quote">I build products end to end, from the database schema to the interface. I am a Computer Science student at Covenant University in Nigeria, working on a campus marketplace, an AI coding environment and browser games.</p>
       <div class="btn-row">
         <a class="btn" href="https://github.com/JohnAyo-dev" target="_blank" rel="noopener">GitHub ↗</a>
         <a class="btn" href="https://www.linkedin.com/in/johnayo-okeyode-ab0129387" target="_blank" rel="noopener">LinkedIn ↗</a>
         <a class="btn btn-gold" href="mailto:johnayookeyode@gmail.com">Email ↗</a>
       </div>
       <div class="stat-row">
-        <div class="stat"><div class="n">10+</div><div class="l">Projects &amp; Concepts</div></div>
-        <div class="stat"><div class="n">5+</div><div class="l">Game Concepts</div></div>
-        <div class="stat"><div class="n">3</div><div class="l">AI Projects</div></div>
-        <div class="stat"><div class="n">4+</div><div class="l">Meru Directions</div></div>
+        <div class="stat"><div class="n">Full-stack</div><div class="l">Engineering</div></div>
+        <div class="stat"><div class="n">AI</div><div class="l">Integration</div></div>
+        <div class="stat"><div class="n">Developer</div><div class="l">Tools</div></div>
+        <div class="stat"><div class="n">Browser</div><div class="l">Games</div></div>
       </div>
     </div>
   </div>
@@ -732,9 +774,8 @@
     <h2 class="section-title"><span class="idx">00</span> About</h2>
     <div class="about-log">
       <span class="tag">// LOG_ENTRY — ORIGIN</span>
-      I don't particularly enjoy leaving an idea as an idea. If I can turn it into a prototype, I usually will. My work sits at the intersection of software engineering, AI, web development, game development and product building. I've explored marketplaces, developer tools, AI systems, browser games, finance concepts and experimental fictional universes. My long-term direction is building original technology, software and entertainment products through <b>Meru</b>.
-      <p><i>"If the music you like doesn't exist, make it."</i> ~ Frank Zappa</p>
-      <p>I try to apply that idea to software, products and everything I build.</p>
+      I build products end to end, from database design and backend logic to user interfaces. My current work includes a campus marketplace, an AI coding environment and browser games. I am studying Computer Science at Covenant University and building software and product projects through <b>Meru Technologies</b>.
+      <p>I am also CTO of JAX.AI at HULTZ 2026. Meru's wider Finance, Entertainment and Philanthropy directions are plans, not operating businesses.</p>
     </div>
   </div>
 </section>
@@ -742,14 +783,14 @@
 <section id="worlds">
   <div class="wrap">
     <h2 class="section-title"><span class="idx">01</span> Game Worlds — Meru Games</h2>
-    <p class="section-lede">Original game concepts built for the browser. SkyFall advanced the furthest — a working prototype with AI competitors and a full race HUD.</p>
+    <p class="section-lede">Browser games and original game worlds at different stages of development. SkyFall is a working prototype; several others remain concepts or worldbuilding projects.</p>
     <div class="game-grid">
 
       <div class="game-card">
         <div class="shot"><img src="assets/projects/skyfall.jpg" alt="SkyFall browser racing prototype screen" loading="lazy" /></div>
         <span class="gc-tag">Racing / Arcade</span>
         <h3>SkyFall</h3>
-        <p>A 2D falling/racing concept: characters descend from outer space toward the ground, competing for position. Built to a working browser prototype, then pushed toward a more polished, commercially presentable feel.</p>
+        <p>A browser racing game where characters fall from space toward the ground and compete for position. Started in Godot 4, then rebuilt for the browser on a canvas.</p>
         <div class="chip-row">
           <span class="chip">Canvas gameplay</span>
           <span class="chip">AI competitors</span>
@@ -762,7 +803,7 @@
         <div class="shot"><img src="assets/projects/african-thug-life.jpg" alt="African Thug Life original setting concept art" loading="lazy" /></div>
         <span class="gc-tag">Culture / Browser Game</span>
         <h3>African Thug Life</h3>
-        <p>An original cross-platform game concept exploring an African setting and identity, rather than leaning entirely on imported game-world aesthetics.</p>
+        <p>A game concept set in an African setting.</p>
         <div class="chip-row">
           <span class="chip">Original setting</span>
           <span class="chip">Identity-driven design</span>
@@ -773,7 +814,7 @@
         <div class="shot"><img src="assets/projects/jill-of-the-hill.jpg" alt="Jill of the Hill original IP concept" loading="lazy" /></div>
         <span class="gc-tag">Original IP</span>
         <h3>Jill of the Hill</h3>
-        <p>An original game concept developed under the broader Meru game-development experimentation.</p>
+        <p>A game website and browser prototype.</p>
         <div class="chip-row"><span class="chip">Concept design</span></div>
       </div>
 
@@ -781,7 +822,7 @@
         <div class="shot"><img src="assets/projects/what-the-f.jpg" alt="What The F story-driven browser game concept" loading="lazy" /></div>
         <span class="gc-tag">Narrative / Story-driven</span>
         <h3>What The F***?!?</h3>
-        <p>An experimental story-driven browser game inspired by the visual and interactive style of games like <i>Summertime Saga</i>, built around its own characters, story and structure designed to make you question everything.</p>
+        <p>A story-driven browser game concept.</p>
         <div class="chip-row">
           <span class="chip">Original story</span>
           <span class="chip">Character-driven</span>
@@ -791,7 +832,7 @@
       <div class="game-card flyforce">
         <span class="gc-tag">Worldbuilding / Universe</span>
         <h3>Fly Force</h3>
-        <p>One of the larger worldbuilding projects — an original fictional universe built around characters known as "Flies", with clans, elemental systems, and combat specializations.</p>
+        <p>A fictional universe with clans, elements and power classes. This is a worldbuilding project, not a finished game.</p>
         <div class="power-grid">
           <div class="power"><b>Elementials</b><span>Learn &amp; manipulate multiple elements</span></div>
           <div class="power"><b>Assassins</b><span>Hand-to-hand &amp; weapon combat</span></div>
@@ -803,7 +844,7 @@
       <div class="game-card">
         <span class="gc-tag">2D Shooter / Web Game</span>
         <h3>NullWave</h3>
-        <p>A 2D shooter web game.</p>
+        <p>A 2D shooter web game in development.</p>
         <div class="chip-row"><span class="chip">Web game</span></div>
       </div>
 
@@ -824,13 +865,13 @@
 <section id="systems">
   <div class="wrap">
     <h2 class="section-title"><span class="idx">02</span> Products &amp; Experiments</h2>
-    <p class="section-lede">Non-game builds — marketplaces, AI experiments, finance tools and web apps.</p>
+    <p class="section-lede">Products and experiments at different stages, with proposed functionality distinguished from completed work.</p>
     <div class="sys-list">
 
       <div class="sys-row with-shot">
         <div class="sys-name">Duka.cu<small>CAMPUS MARKETPLACE</small></div>
         <div>
-          <p>A student marketplace built for Covenant University, making it easier for students to buy and sell products within the campus community through verified sellers, pickup and delivery.</p>
+          <p>A student marketplace built around Covenant University, with verified sellers, campus pickup and delivery.</p>
           <div class="chip-row">
             <span class="chip">Student marketplace</span>
             <span class="chip">Verified sellers</span>
@@ -849,7 +890,7 @@
       <div class="sys-row with-shot">
         <div class="sys-name">JAX.AI<small>AI PROJECT</small></div>
         <div>
-          <p>"Just Another Xenobot". An AI project exploring the idea of building a personal assistant system with its own architecture, identity and interaction model.</p>
+          <p>"Just Another Xenobot". A personal assistant project built around its own architecture.</p>
           <div class="chip-row">
             <span class="chip">Hugging Face</span>
             <span class="chip">Transformers.js</span>
@@ -863,7 +904,7 @@
       <div class="sys-row with-shot">
         <div class="sys-name">SpendStac<small>FINTECH</small></div>
         <div>
-          <p>A personal finance concept centered on Income vs Spend — calculating monthly spending against income with a dedicated visual overview.</p>
+          <p>A personal finance tracker focused on income against spending.</p>
           <div class="chip-row"><span class="chip">Income vs spend</span><span class="chip">Financial overview UI</span></div>
         </div>
         <div class="shot"><img src="assets/projects/spendstac.jpg" alt="spendstac income vs spending overview" loading="lazy" /></div>
@@ -872,7 +913,7 @@
       <div class="sys-row">
         <div class="sys-name">Weather App<small>WEB</small></div>
         <div>
-          <p>A React weather application using Open-Meteo, with city search, geocoding and dynamic weather presentation.</p>
+          <p>A React weather dashboard using the Open-Meteo API with city search.</p>
           <div class="chip-row"><span class="chip">Open-Meteo API</span><span class="chip">Geocoding</span><span class="chip">Search/filter UI</span></div>
         </div>
       </div>
@@ -880,11 +921,16 @@
       <div class="sys-row with-shot">
         <div class="sys-name">CU Student Resources<small>EDUCATION</small></div>
         <div>
-          <p>Interactive resources making Covenant University student life easier to navigate — buildings, courses, chapel, cafeteria, sports, exams and campus maps. Includes "Unspoken Rules," a documented social operating system for campus life that isn't in any official handbook.</p>
+          <p>Interactive resources for navigating Covenant University student life.</p>
           <div class="chip-row"><span class="chip">Campus map</span><span class="chip">Unspoken Rules</span><span class="chip">Exam info</span></div>
         </div>
         <div class="shot"><img src="assets/projects/cu-student-resources.jpg" alt="CU Student Resources campus guide screen" loading="lazy" /></div>
       </div>
+
+      <div class="sys-row"><div class="sys-name">Tandem<small>COLLABORATIVE WORKSPACE · IN DEVELOPMENT</small></div><div><p>A workspace product exploring collaboration, product architecture and full-stack engineering. Current work is defining the architecture and shipping a first working slice.</p></div></div>
+      <div class="sys-row"><div class="sys-name">Codify<small>AI DEVELOPER TOOLING · IN DEVELOPMENT</small></div><div><p>A local-first collaborative coding environment with an AI coding agent. The Vite and React client is scaffolded; inline AI edits, multi-language support and real-time collaboration are planned, not built.</p><div class="chip-row"><span class="chip">Vite</span><span class="chip">React</span></div></div></div>
+      <div class="sys-row"><div class="sys-name">OSCAR<small>AI EXPERIMENT · PROTOTYPE</small></div><div><p>Offline browser chat running a small local model.</p></div></div>
+      <div class="sys-row"><div class="sys-name">CELINA<small>AI CONCEPT</small></div><div><p>The coding agent planned for Codify.</p></div></div>
 
     </div>
   </div>
@@ -894,13 +940,13 @@
   <div class="wrap">
     <h2 class="section-title"><span class="idx">03</span> Highlights</h2>
     <div class="ach-list">
-      <div class="ach"><div class="ach-icon">◆</div><div><h4>Built a student marketplace</h4><p>Duka.cu — verified sellers, campus pickup and delivery for Covenant University.</p></div></div>
-      <div class="ach"><div class="ach-icon">★</div><div><h4>Created an original game studio</h4><p>Founded Meru Games and shipped multiple original prototypes.</p></div></div>
-      <div class="ach"><div class="ach-icon">▲</div><div><h4>Built a functional game prototype</h4><p>SkyFall — AI competitors, HUD, ranking &amp; race logic.</p></div></div>
-      <div class="ach"><div class="ach-icon">◈</div><div><h4>Developed original game worlds</h4><p>Clans, elements, power classifications.</p><ul class="plist"><li>Fly Force</li><li>ATL</li><li>Jill of the Hill</li><li>Bridgewood High</li><li>Deadlox</li><li>and more</li></ul></div></div>
-      <div class="ach"><div class="ach-icon">◎</div><div><h4>Explored personal AI systems</h4><p>JAX.AI and earlier AI experiments — local models, browser inference.</p></div></div>
+      <div class="ach"><div class="ach-icon">◆</div><div><h4>Duka.cu</h4><p>Student marketplace with verified sellers, campus pickup and delivery.</p></div></div>
+      <div class="ach"><div class="ach-icon">★</div><div><h4>Game development</h4><p>Meru game projects include a SkyFall browser prototype and game concepts and worlds at different stages.</p></div></div>
+      <div class="ach"><div class="ach-icon">▲</div><div><h4>SkyFall</h4><p>Browser racing prototype with AI competitors, race HUD and ranking logic.</p></div></div>
+      <div class="ach"><div class="ach-icon">◈</div><div><h4>Game worlds and concepts</h4><p>Projects at different stages, from concepts to a browser prototype.</p><ul class="plist"><li>Purple City: The Story</li><li>FlyForce</li><li>African Thug Life</li><li>Jill of the Hill</li><li>Deadlox</li><li>What the F***?!?</li></ul></div></div>
+      <div class="ach"><div class="ach-icon">◎</div><div><h4>AI projects</h4><p>JAX.AI, OSCAR and CELINA explore personal assistants, local browser chat and AI coding tools.</p></div></div>
       <div class="ach"><div class="ach-icon">✚</div><div><h4>Built across multiple domains</h4><ul class="plist"><li>Gaming</li><li>Commerce</li><li>Finance</li><li>Education</li><li>Weather</li><li>AI</li><li>Entertainment</li></ul></div></div>
-      <div class="ach"><div class="ach-icon">✓</div><div><h4>Shipped without waiting for permission</h4><p>Turned unconventional ideas into working prototypes, fast.</p></div></div>
+      <div class="ach"><div class="ach-icon">✓</div><div><h4>Engineering interests</h4><p>Full-stack engineering, developer tools, AI integration, database design and browser games.</p></div></div>
     </div>
   </div>
 </section>
@@ -914,20 +960,18 @@
     <div class="inv-grid">
       <div class="inv-slot">
         <h4>Languages</h4>
-        <div class="chip-row">
-          <span class="chip">JavaScript</span><span class="chip">TypeScript</span><span class="chip">Python</span><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">C</span><span class="chip">Java</span><span class="chip">Tailwind</span>
-        </div>
+        <div class="chip-row"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">React</span><span class="chip">Tailwind CSS</span></div>
       </div>
       <div class="inv-slot">
         <h4>Frameworks / Tech</h4>
         <div class="chip-row">
-          <span class="chip">React</span><span class="chip">Canvas API</span><span class="chip">LocalStorage</span><span class="chip">REST / API integration</span><span class="chip">Transformers.js</span><span class="chip">WebGPU</span><span class="chip">Figma</span>
+          <span class="chip">Node.js</span><span class="chip">API development</span><span class="chip">Authentication</span><span class="chip">Backend validation</span><span class="chip">AI integration</span><span class="chip">Transformers.js</span><span class="chip">Local models</span><span class="chip">WebGPU</span>
         </div>
       </div>
       <div class="inv-slot">
         <h4>Database / Tools</h4>
         <div class="chip-row">
-          <span class="chip">MySQL</span><span class="chip">XAMPP</span><span class="chip">Git / GitHub</span><span class="chip">Hugging Face</span>
+          <span class="chip">MySQL</span><span class="chip">Database design</span><span class="chip">Data modeling</span><span class="chip">Normalization</span><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Godot</span><span class="chip">GDScript</span><span class="chip">Canvas games</span><span class="chip">Vite</span><span class="chip">Electron</span><span class="chip">Vercel</span><span class="chip">Netlify</span>
         </div>
       </div>
     </div>
@@ -939,7 +983,7 @@
     <h2 class="section-title"><span class="idx">05</span> Education</h2>
     <h3 class="display" style="margin:0 0 4px;font-size:1.1rem;">Experience</h3>
     <div class="xp-hint">CLICK THE STACK TO EXPAND</div>
-    <div class="xp-stack" id="xps" role="button" tabindex="0" aria-expanded="false"><div class="xp" data-tilt style="--i:0"><span class="meta">Game studio · Ongoing</span><h3>Meru Games — Founder</h3><ul class="tl"><li>SkyFall — working browser prototype with AI competitors, HUD and race logic</li><li>African Thug Life, Jill of the Hill, What The F***?!? — original browser game concepts</li><li>Fly Force, ATL, Bridgewood High, Deadlox — original game worlds</li></ul></div><div class="xp" data-tilt style="--i:1"><span class="meta">Products &amp; AI · Ongoing</span><h3>Meru Technologies — Product Builder</h3><ul class="tl"><li>Duka.cu — student marketplace for Covenant University</li><li>JAX.AI — personal AI engine concept</li><li>spendstac and CU Student Resources</li></ul></div><div class="xp" data-tilt style="--i:2"><span class="meta">Student · In progress</span><h3>Covenant University — Computer Science</h3><ul class="tl"><li>Data structures &amp; algorithms, database systems</li><li>Software engineering, OOAD / UML</li><li>Computer architecture, CPU pipelining, assembly</li></ul></div></div>
+    <div class="xp-stack" id="xps" role="button" tabindex="0" aria-expanded="false"><div class="xp" data-tilt style="--i:0"><span class="meta">Founder · Ongoing</span><h3>Meru Technologies</h3><ul class="tl"><li>Software, AI and game projects</li><li>Duka.cu — student marketplace for Covenant University</li><li>Tandem and Codify — currently building</li></ul></div><div class="xp" data-tilt style="--i:1"><span class="meta">CTO · HULTZ 2026</span><h3>JAX.AI</h3><ul class="tl"><li>Chief Technology Officer for JAX.AI at HULTZ 2026</li><li>Personal assistant project built around its own architecture</li></ul></div><div class="xp" data-tilt style="--i:2"><span class="meta">Student · In progress</span><h3>Covenant University — Computer Science</h3><ul class="tl"><li>Data structures and algorithms, database systems</li><li>Software engineering and OOAD</li></ul></div></div>
     <div class="quest">
       <div class="quest-head">
         <h3>Covenant University — Computer Science</h3>
@@ -949,16 +993,7 @@
         <span class="chip">Data structures &amp; algorithms</span>
         <span class="chip">Database systems</span>
         <span class="chip">Software engineering</span>
-        <span class="chip">OOAD / UML</span>
-        <span class="chip">ER diagrams &amp; DFDs</span>
-        <span class="chip">Normalization</span>
-        <span class="chip">Graph theory / Eulerian graphs</span>
-        <span class="chip">Computer architecture</span>
-        <span class="chip">CPU pipelining</span>
-        <span class="chip">Assembly</span>
-        <span class="chip">Cache systems</span>
-        <span class="chip">Python / C / Java</span>
-        <span class="chip">Web development</span>
+        <span class="chip">OOAD</span>
       </div>
     </div>
   </div>
@@ -972,24 +1007,26 @@
       <table>
         <thead><tr><th>Project</th><th>Type</th><th>What was built</th></tr></thead>
         <tbody>
-          <tr><td class="proj">Duka</td><td class="type">Marketplace</td><td>A student marketplace built for Covenant University, making it easier for students to buy and sell products within the campus community through verified sellers, pickup and delivery.</td></tr>
-          <tr><td class="proj">SkyFall <span class="co">/ Meru Games</span></td><td class="type">Game</td><td>Canvas-based falling/racing game with AI and HUD.</td></tr>
-          <tr><td class="proj">JAX.AI <span class="co">/ Meru AI</span></td><td class="type">AI</td><td>Personal AI engine concept.</td></tr>
-          <tr><td class="proj">Fly Force <span class="co">/ Meru Games</span></td><td class="type">Game / Universe</td><td>Original power system, clans, characters and lore.</td></tr>
-          <tr><td class="proj">SpendStac</td><td class="type">FinTech</td><td>Income vs. spending application.</td></tr>
-          <tr><td class="proj">Weather App</td><td class="type">Web</td><td>React weather application using Open-Meteo.</td></tr>
-          <tr><td class="proj">Avaia by Moni</td><td class="type">E-commerce</td><td>Fashion / accessory storefront.</td></tr>
-          <tr><td class="proj">African Thug Life <span class="co">/ Meru Games</span></td><td class="type">Game</td><td>Browser game concept.</td></tr>
-          <tr><td class="proj">Jill of the Hill <span class="co">/ Meru Games</span></td><td class="type">Game</td><td>Original game concept.</td></tr>
-          <tr><td class="proj">What The F***?!? <span class="co">/ Meru Games</span></td><td class="type">Game</td><td>Story-driven browser game concept.</td></tr>
-          <tr><td class="proj">KUPP.fun</td><td class="type">Social Platform</td><td>Real-time platform concept connecting creators, models and clients.</td></tr>
-          <tr><td class="proj">PodHaus</td><td class="type">Sales Platform</td><td>Ipod Web Sales Platform</td></tr>
-          <tr><td class="proj">Xtra</td><td class="type">Streaming Platform</td><td>Streaming platform concept.</td></tr>
-          <tr><td class="proj">NullWave</td><td class="type">Game</td><td>2D shooter web game.</td></tr>
-          <tr><td class="proj">GlamourHouse</td><td class="type">Fashion Platform</td><td>Covenant University platform for fashion-oriented people.</td></tr>
-          <tr><td class="proj">Harvast</td><td class="type">Agriculture</td><td>Tool for African farmers.</td></tr>
-          <tr><td class="proj">MeruQuest</td><td class="type">Productivity</td><td>To-do list.</td></tr>
-          <tr><td class="proj">LinkUp</td><td class="type">Scheduling</td><td>Scheduling and meeting app for people with different schedules.</td></tr>
+          <tr><td class="proj">Duka.cu</td><td class="type">Marketplace · In development</td><td>Campus marketplace with verified sellers, campus pickup and delivery.</td></tr>
+          <tr><td class="proj">Tandem</td><td class="type">Collaborative workspace · In development</td><td>Independent product exploring collaboration and full-stack engineering.</td></tr>
+          <tr><td class="proj">Codify</td><td class="type">AI developer tooling · In development</td><td>Local-first collaborative coding environment with an AI coding agent; client scaffolded, planned features remain unbuilt.</td></tr>
+          <tr><td class="proj">SkyFall</td><td class="type">Game · Prototype</td><td>Browser racing game with a canvas gameplay loop, AI competitors and race HUD.</td></tr>
+          <tr><td class="proj">JAX.AI</td><td class="type">AI</td><td>Personal assistant project built around its own architecture.</td></tr>
+          <tr><td class="proj">Closing Time</td><td class="type">Game</td><td>Game project.</td></tr>
+          <tr><td class="proj">Spendly / SpendStac</td><td class="type">Software · In development</td><td>Personal finance tracker focused on income against spending.</td></tr>
+          <tr><td class="proj">Meru Digital Services</td><td class="type">Software · In development</td><td>Digital services under Meru.</td></tr>
+          <tr><td class="proj">Weather app</td><td class="type">Software · Developed</td><td>React weather dashboard using Open-Meteo with city search.</td></tr>
+          <tr><td class="proj">LinkUp</td><td class="type">Software · Concept</td><td>Scheduling app for people with different schedules.</td></tr>
+          <tr><td class="proj">KUPP.fun</td><td class="type">Software · Contracted</td><td>Platform connecting creators and clients.</td></tr>
+          <tr><td class="proj">OSCAR</td><td class="type">AI · Prototype</td><td>Offline browser chat running a small local model.</td></tr>
+          <tr><td class="proj">CELINA</td><td class="type">AI · Concept</td><td>Coding agent planned for Codify.</td></tr>
+          <tr><td class="proj">Purple City: The Story</td><td class="type">Game · Concept</td><td>Campus-life game set at Covenant University.</td></tr>
+          <tr><td class="proj">FlyForce</td><td class="type">Game world · Concept</td><td>Fictional universe with clans, elements and power classes.</td></tr>
+          <tr><td class="proj">African Thug Life</td><td class="type">Game · Concept</td><td>Game set in an African setting.</td></tr>
+          <tr><td class="proj">Jill of the Hill</td><td class="type">Game · Prototype</td><td>Game website and browser prototype.</td></tr>
+          <tr><td class="proj">Deadlox</td><td class="type">Game world · In development</td><td>Game world.</td></tr>
+          <tr><td class="proj">What the F***?!?</td><td class="type">Game · Concept</td><td>Story-driven browser game.</td></tr>
+          <tr><td class="proj">NullWave</td><td class="type">Game · In development</td><td>2D shooter web game.</td></tr>
         </tbody>
       </table>
     </div>
@@ -1012,7 +1049,7 @@
     </div>
   <div class="mv" aria-label="The Meru Vision: Meru Group structure">
       <span class="eyebrow" style="margin-bottom:6px;">The Meru Vision</span>
-      <p class="mv-lede">Meru Group is the umbrella for the software, AI, games and product ideas I want to turn into real businesses and experiences.</p>
+      <p class="mv-lede">Meru Technologies covers software, AI and game projects. The wider Finance, Entertainment and Philanthropy directions are plans, not operating businesses.</p>
       <div class="mv-root"><i class="mk"></i><div><b>MERU</b><span>GROUP</span></div></div>
       <div class="mv-row">
         <div class="mv-col" style="--c:#3B82F6"><div class="mv-box" style="--c:#3B82F6"><i class="mk"></i><div><b>MERU</b><span>TECHNOLOGIES</span></div></div><div class="mv-kids k3"><div class="mv-t" style="--c:#3B82F6">Games</div><div class="mv-t" style="--c:#22C55E">AI</div><div class="mv-t" style="--c:#F5A524">Software</div><div class="mv-t" style="--c:#A855F7">IP</div><div class="mv-t" style="--c:#2DD4BF">JAX</div><div class="mv-t" style="--c:#A855F7">Codify</div></div></div>
@@ -1042,8 +1079,8 @@
 
 <footer>
   <div class="wrap">
-    <div class="ticker">CURRENTLY BUILDING: <b>Meru Technologies</b> · <b>JAX.AI</b> · <b>KUPP.fun</b> · <b>Duka.cu</b> · <b>SpendStacs</b></div>
-    <p class="oneliner">JohnAyo Okeyode is a Computer Science student, software engineer and product builder from Nigeria. He builds web applications, AI projects, developer tools and games, while developing Meru Technologies as a broader ecosystem for software, AI, gaming and entertainment products.</p>
+    <div class="ticker">CURRENTLY BUILDING: <b>Tandem</b> · <b>Codify</b> · <b>Duka.cu</b></div>
+    <p class="oneliner">JohnAyo Okeyode is a Computer Science student at Covenant University and founder of Meru Technologies. His interests include full-stack engineering, developer tools, AI integration, database design and browser games.</p>
   </div>
 </footer>
 

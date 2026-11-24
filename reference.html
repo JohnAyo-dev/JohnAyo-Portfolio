@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JohnAyo Okeyode | Software Engineer and Product Builder</title>
+<meta name="description" content="JohnAyo Okeyode, Computer Science student at Covenant University and founder of Meru Technologies. Full-stack products, developer tools, AI integration and browser games.">
+<meta property="og:title" content="JohnAyo Okeyode | Software Engineer and Product Builder">
+<meta property="og:description" content="Full-stack products, developer tools, AI integration and browser games.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://johnayodev.vercel.app/">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0A0B0E;--panel:#11131A;--line:#23262F;--text:#E8E9ED;--muted:#9097A3;--red:#E0505C;--live:#5BB98B;--proto:#E0A84F;--dev:#6FA3E0;--idea:#9097A3}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+h1,h2,h3{font-family:'Chakra Petch',sans-serif;margin:0;line-height:1.15}
+p{margin:0 0 12px;max-width:68ch}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+section{padding:72px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(1.5rem,3vw,2rem);margin-bottom:10px}
+.lede{color:var(--muted);margin-bottom:32px}
+nav{position:sticky;top:0;z-index:10;background:rgba(10,11,14,.94);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:56px}
+.brand{font:700 1rem 'Chakra Petch',sans-serif;text-decoration:none;white-space:nowrap}
+.brand i{font-style:normal;color:var(--red)}
+nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0;overflow-x:auto;scrollbar-width:none}
+nav ul::-webkit-scrollbar{display:none}
+nav li a{display:block;padding:8px 10px;font:500 .8rem Poppins,sans-serif;color:var(--muted);text-decoration:none;white-space:nowrap}
+nav li a:hover{color:var(--text)}
+.hero{padding:96px 0 80px;border-top:0}
+.hero h1{font-size:clamp(2.6rem,8vw,4.6rem);font-weight:700}
+.role{font:500 1.05rem Poppins,sans-serif;color:var(--red);margin:10px 0 22px}
+.hero p.lead{font-size:1.1rem;color:#C9CDD6}
+.focus{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 26px;padding:0;list-style:none}
+.focus li,.chip{font:400 .78rem Poppins,sans-serif;border:1px solid var(--line);padding:3px 10px;border-radius:4px;color:#C9CDD6}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border:1px solid var(--line);border-radius:4px;font:500 .85rem Poppins,sans-serif;text-decoration:none;background:var(--panel)}
+.btn:hover{border-color:var(--red)}
+.btn.main{background:var(--red);border-color:var(--red);color:#fff}
+.st{font:500 .68rem Poppins,sans-serif;letter-spacing:.06em;padding:2px 8px;border-radius:4px;border:1px solid currentColor;white-space:nowrap}
+.st.live{color:var(--live)}.st.prototype{color:var(--proto)}.st.dev{color:var(--dev)}.st.concept,.st.verify{color:var(--idea)}
+.st.developed{color:var(--text)}.st.contracted{color:var(--red)}
+.proj{border:1px solid var(--line);border-radius:8px;background:var(--panel);margin-bottom:16px}
+.proj-top{display:grid;grid-template-columns:1fr 280px;gap:24px;padding:24px}
+.proj-top.noimg{grid-template-columns:1fr}
+.proj h3{font-size:1.3rem}
+.meta{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:6px 0 12px;color:var(--muted);font-size:.85rem}
+.proj img{width:100%;height:100%;max-height:200px;object-fit:cover;border-radius:6px;border:1px solid var(--line)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}
+.links{display:flex;flex-wrap:wrap;gap:16px;font:500 .82rem Poppins,sans-serif}
+.links a{color:var(--red)}
+details{border-top:1px solid var(--line)}
+summary{cursor:pointer;padding:14px 24px;font:500 .85rem Poppins,sans-serif;color:var(--muted);list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"+ "}
+details[open] summary::before{content:"- "}
+.study{padding:4px 24px 24px;display:grid;gap:18px}
+.study h4{margin:0 0 4px;font:600 .95rem 'Chakra Petch',sans-serif;color:var(--red)}
+.study p,.study ul{margin:0;color:#C9CDD6;font-size:.93rem}
+.study ul{padding-left:18px}
+.rows{border:1px solid var(--line);border-radius:8px;background:var(--panel)}
+.row{display:grid;grid-template-columns:200px 1fr;gap:20px;padding:18px 22px;border-top:1px solid var(--line)}
+.row:first-child{border-top:0}
+.row h3{font-size:1.02rem}
+.row p{color:var(--muted);font-size:.92rem;margin:0}
+.empty{border:1px dashed var(--line);border-radius:8px;padding:24px;color:var(--muted)}
+.cap{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px}
+.cap h3{font-size:1.02rem;margin-bottom:10px}
+.cap dl{margin:0}
+.cap dt{font:500 .72rem Poppins,sans-serif;color:var(--muted);margin:10px 0 6px}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.filters button{font:500 .78rem Poppins,sans-serif;padding:6px 14px;border-radius:4px;border:1px solid var(--line);background:none;color:var(--muted);cursor:pointer}
+.filters button[aria-pressed=true]{border-color:var(--red);color:var(--text)}
+#q{width:100%;max-width:340px;padding:9px 12px;margin-bottom:16px;background:var(--panel);border:1px solid var(--line);border-radius:4px;color:var(--text);font:inherit}
+.contact a{color:var(--red)}
+.contact p{margin-bottom:6px}
+.ic{width:16px;height:16px;flex:none}
+.cgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.contact a.cl{display:flex;align-items:center;gap:16px;padding:20px;border:1px solid var(--line);border-radius:8px;background:var(--panel);text-decoration:none;color:var(--text);transition:border-color .15s}
+.contact a.cl:hover{border-color:var(--red)}
+.cl .ic{width:28px;height:28px;color:var(--red)}
+.cl span{display:block;min-width:0}
+.cl small{display:block;color:var(--muted);font:400 .75rem Poppins,sans-serif}
+.cl b{font:500 .9rem Roboto,sans-serif;overflow-wrap:anywhere}
+footer{padding:32px 0 56px;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
+@media(max-width:760px){.proj-top{grid-template-columns:1fr}.row{grid-template-columns:1fr;gap:6px}section{padding:56px 0}.hero{padding:64px 0 56px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-github" viewBox="0 0 16 16"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></symbol>
+<symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="3" fill="currentColor"/><g fill="var(--bg)"><rect x="5.5" y="9.5" width="2.6" height="8.5"/><circle cx="6.8" cy="6.6" r="1.5"/><path d="M10.5 9.5h2.5v1.2c.5-.9 1.5-1.4 2.7-1.4 2.2 0 3 1.4 3 3.6V18h-2.6v-4.4c0-1.1-.4-1.7-1.3-1.7-1 0-1.7.7-1.7 1.9V18h-2.6z"/></g></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 7.5l8.5 6 8.5-6"/></g></symbol>
+<symbol id="i-down" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7.5 11l4.5 4.5 4.5-4.5M5 20h14"/></g></symbol>
+</defs></svg>
+<nav aria-label="Main"><div class="wrap">
+<a class="brand" href="#top">JohnAyo<i>.dev</i></a>
+<ul>
+<li><a href="#featured">Featured</a></li><li><a href="#building">Building</a></li><li><a href="#lab">Lab</a></li><li><a href="#github">GitHub</a></li><li><a href="#skills">Skills</a></li><li><a href="#background">Background</a></li><li><a href="#more">More projects</a></li><li><a href="#contact">Contact</a></li>
+</ul></div></nav>
+
+<main id="top">
+<header class="hero"><div class="wrap">
+<h1>JohnAyo Okeyode</h1>
+<p class="role">Software Engineer | Product Builder | Founder, Meru Technologies</p>
+<p class="lead">I build products end to end, from the database schema to the interface. I am a Computer Science student at Covenant University in Nigeria, working on a campus marketplace, an AI coding environment and browser games.</p>
+<ul class="focus" aria-label="Engineering interests"><li>Full-stack engineering</li><li>Developer tools</li><li>AI integration</li><li>Database design</li><li>Browser games</li></ul>
+<div class="btns">
+<a class="btn main" href="JohnAyo-Okeyode-CV.pdf" download><svg class="ic" aria-hidden="true"><use href="#i-down"/></svg>Download CV</a>
+<a class="btn" href="https://github.com/JohnAyo-dev" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-github"/></svg>GitHub</a>
+<a class="btn" href="https://linkedin.com/in/johnayo-okeyode-ab0129387" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn</a>
+<a class="btn" href="mailto:johnayookeyode@gmail.com"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg>Email</a>
+</div></div></header>
+
+<section id="featured"><div class="wrap">
+<h2>Featured engineering</h2>
+<p class="lede">Four projects, each with an honest status. Open a case study to see the decisions behind it.</p>
+<div id="featuredList"></div>
+</div></section>
+
+<section id="building"><div class="wrap">
+<h2>Currently building</h2>
+<p class="lede">Active work only. Edit the list in the script when something changes.</p>
+<div class="rows" id="buildList"></div>
+</div></section>
+
+<section id="lab"><div class="wrap">
+<h2>Engineering lab</h2>
+<p class="lede">Published write-ups appear here with a date. Planned topics are labelled as planned.</p>
+<div id="labList"></div>
+</div></section>
+
+<section id="github"><div class="wrap">
+<h2>GitHub</h2>
+<p class="lede">Selected repositories, read live from the public GitHub API and cached for an hour. If the API is unavailable, the links still work.</p>
+<div class="rows" id="repoList"></div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<h2>Technical capabilities</h2>
+<p class="lede">Grouped by discipline and by how well I know each tool.</p>
+<div class="cap" id="capList"></div>
+</div></section>
+
+<section id="background"><div class="wrap">
+<h2>Leadership and education</h2>
+<div class="rows">
+<div class="row"><h3>Founder, Meru Technologies</h3><p>My software and product-building venture, covering AI, software and game projects. The wider Meru vision includes Finance, Entertainment and Philanthropy directions. Those are plans, not operating businesses.</p></div>
+<div class="row"><h3>CTO, JAX.AI</h3><p>Chief Technology Officer for JAX.AI at HULTZ 2026.</p></div>
+<div class="row"><h3>Covenant University</h3><p>BSc Computer Science, in progress. Coursework relevant to my projects: data structures and algorithms, database systems, software engineering and OOAD.</p></div>
+</div></div></section>
+
+<section id="more"><div class="wrap">
+<h2>Other projects</h2>
+<p class="lede">Smaller builds, experiments and game worlds. A game universe is not a finished game, so the status says which is which.</p>
+<label class="sr" for="q" style="position:absolute;left:-9999px">Search projects</label>
+<input id="q" type="search" placeholder="Search projects">
+<div class="filters" id="filters" role="group" aria-label="Filter by discipline"></div>
+<div class="rows" id="moreList"></div>
+<p id="none" class="empty" hidden>No projects match. Clear the search or pick another discipline.</p>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+<h2>Contact</h2>
+<p class="lede">Email is the fastest way to reach me.</p>
+<div class="cgrid">
+<a class="cl" href="mailto:johnayookeyode@gmail.com"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg><span><small>Email</small><b>johnayookeyode@gmail.com</b></span></a>
+<a class="cl" href="https://github.com/JohnAyo-dev" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-github"/></svg><span><small>GitHub</small><b>JohnAyo-dev</b></span></a>
+<a class="cl" href="https://linkedin.com/in/johnayo-okeyode-ab0129387" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-linkedin"/></svg><span><small>LinkedIn</small><b>JohnAyo Okeyode</b></span></a>
+<a class="cl" download href="JohnAyo-Okeyode-CV.pdf"><svg class="ic" aria-hidden="true"><use href="#i-down"/></svg><span><small>CV</small><b>Download PDF</b></span></a>
+</div>
+</div></section>
+</main>
+<footer><div class="wrap">JohnAyo Okeyode. Computer Science student and founder of Meru Technologies, Nigeria.</div></footer>
+
+<script>
+/* All content lives in these arrays. Edit data here, not the markup. */
+const S={live:'LIVE',prototype:'PROTOTYPE',dev:'IN DEVELOPMENT',concept:'CONCEPT',verify:'STATUS TO VERIFY',developed:'DEVELOPED',contracted:'CONTRACTED'};
+const GH='https://github.com/JohnAyo-dev';
+
+/* Case study fields are optional: only fields you fill in are rendered. */
+const featured=[
+{name:'Duka.cu',cat:'Full-stack marketplace',status:'dev',
+ desc:'A student marketplace built around Covenant University, with verified sellers, campus pickup and delivery.',
+ stack:['HTML','CSS','JavaScript','MySQL'],repo:'',demo:'',shot:'assets/projects/duka.jpg',
+ study:{
+ 'Overview':'A marketplace where students buy and sell within the campus community.',
+ 'Engineering work':['Listing management and multi-image listings','Seller verification','Search and categorization','User accounts and authentication','Orders and backend validation','Budget tracking','Delivery and payment architecture (design stage, not complete)'],
+ 'Results':'No verified metrics yet. Real listing and tester counts will go here once measured.'}},
+{name:'Tandem',cat:'Collaborative workspace',status:'dev',
+ desc:'A workspace product exploring collaboration, product architecture and full-stack engineering as an independent challenge.',
+ stack:[],repo:'',demo:'',shot:'',
+ study:{'Overview':'Architecture and development decisions will be documented here as implementation progresses.','Current development status':'Proposed functionality is not presented as completed.'}},
+{name:'Codify',cat:'AI-powered developer tooling',status:'dev',
+ desc:'A local-first collaborative coding environment with an AI coding agent, exploring AI-assisted editing and developer workflows.',
+ stack:['Vite','React'],repo:'',demo:'',shot:'',
+ study:{
+ 'Overview':'An editor environment that combines code editing with AI-assisted changes.',
+ 'Current development status':'The Vite and React client is scaffolded. Inline AI edits, multi-language support and real-time collaboration are planned, not built.'}},
+{name:'SkyFall',cat:'Game development',status:'prototype',
+ desc:'A browser racing game where characters fall from space toward the ground and compete for position.',
+ stack:['JavaScript','HTML5 Canvas'],repo:'https://github.com/JohnAyo-dev/SkyFallPrototype',demo:'',shot:'assets/projects/skyfall.jpg',
+ study:{
+ 'Overview':'Started in Godot 4, then rebuilt for the browser on a canvas.',
+ 'Engineering work':['Canvas gameplay loop','AI competitors','Race HUD and ranking logic'],
+ 'Results':'No verified metrics yet.'}}
+];
+
+const building=[
+{name:'Tandem',obj:'Define the architecture and ship a first working slice.',status:'dev',link:'#featured'},
+{name:'Codify',obj:'Move from client scaffold to a working editor core.',status:'dev',link:'#featured'},
+{name:'Duka.cu',obj:'Complete delivery and payment architecture.',status:'dev',link:'#featured'}
+];
+
+/* Add articles like: {title,topic,date:'2026-11-24',intro,href:'lab/slug.html'} */
+const articles=[];
+
+/* Names are matched against your public GitHub repos. Fix any that differ. */
+const repos=[
+{n:'Duka.cu',m:'duka',d:'A student marketplace built around Covenant University, with verified sellers, campus pickup and delivery.'},
+{n:'Tandem',m:'tandem',d:'A workspace product exploring collaboration, product architecture and full-stack engineering as an independent challenge.'},
+{n:'Codify',m:'codify',d:'A local-first collaborative coding environment with an AI coding agent, exploring AI-assisted editing and developer workflows.'},
+{n:'Closing Time',m:'closing-time',d:'Game project.'}];
+
+const cap=[
+['Frontend engineering',{Experienced:['HTML','CSS','JavaScript'],'Working knowledge':['React','Tailwind CSS']}],
+['Backend engineering',{'Working knowledge':['Node.js','API development','Authentication','Backend validation']}],
+['AI engineering',{'Working knowledge':['AI integration','Transformers.js'],'Currently exploring':['Local models','WebGPU']}],
+['Databases',{'Working knowledge':['MySQL','Database design','Data modeling','Normalization']}],
+['Game development',{'Working knowledge':['Godot','GDScript','Canvas games']}],
+['Tools and infrastructure',{Experienced:['Git','GitHub'],'Working knowledge':['Vite','Electron','Vercel','Netlify']}]
+];
+
+const more=[
+['Software and products','Spendly / SpendStac','Personal finance tracker focused on income against spending.','dev'],
+['Software and products','Meru Digital Services','Digital services under Meru.','dev'],
+['Software and products','Weather app','React weather dashboard using the Open-Meteo API with city search.','developed'],
+['Software and products','LinkUp','Scheduling app for people with different schedules.','concept'],
+['Software and products','KUPP.fun','Platform connecting creators and clients.','contracted'],
+['Artificial intelligence','JAX.AI','Personal assistant project built around its own architecture.','dev'],
+['Artificial intelligence','OSCAR','Offline browser chat running a small local model.','prototype'],
+['Artificial intelligence','CELINA','The coding agent planned for Codify.','concept'],
+['Game development','Purple City: The Story','Campus-life game set at Covenant University.','concept'],
+['Game development','Closing Time','Game project.','concept'],
+['Game development','FlyForce','Fictional universe with clans, elements and power classes. A world, not a finished game.','concept'],
+['Game development','African Thug Life','Game set in an African setting.','concept'],
+['Game development','Jill of the Hill','Game website and browser prototype.','prototype'],
+['Game development','Deadlox','Game world.','dev'],
+['Game development','What the F***?!?','Story-driven browser game.','concept'],
+['Game development','NullWave','2D shooter web game.','dev']
+];
+
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const badge=k=>`<span class="st ${k}">${S[k]}</span>`;
+
+/* Featured projects: card plus expandable case study. */
+$('featuredList').innerHTML=featured.map(p=>{
+ const links=[p.repo&&`<a href="${p.repo}" target="_blank" rel="noopener">Repository</a>`,p.demo&&`<a href="${p.demo}" target="_blank" rel="noopener">Live demo</a>`].filter(Boolean).join('');
+ const study=Object.entries(p.study).map(([h,v])=>`<div><h4>${h}</h4>${Array.isArray(v)?'<ul>'+v.map(i=>`<li>${esc(i)}</li>`).join('')+'</ul>':`<p>${esc(v)}</p>`}</div>`).join('');
+ return `<article class="proj"><div class="proj-top${p.shot?'':' noimg'}"><div>
+ <h3>${p.name}</h3><div class="meta"><span>${p.cat}</span>${badge(p.status)}</div>
+ <p>${p.desc}</p>${p.stack.length?`<div class="chips">${p.stack.map(t=>`<span class="chip">${t}</span>`).join('')}</div>`:''}
+ ${links?`<div class="links">${links}</div>`:''}</div>
+ ${p.shot?`<img src="${p.shot}" alt="${p.name} screenshot" width="560" height="350" loading="lazy" decoding="async" onerror="this.remove()">`:''}</div>
+ <details><summary>Case study</summary><div class="study">${study}</div></details></article>`}).join('');
+
+$('buildList').innerHTML=building.map(b=>`<div class="row"><h3><a href="${b.link}">${b.name}</a></h3><div><p>${b.obj}</p><div class="meta">${badge(b.status)}</div></div></div>`).join('');
+
+$('labList').innerHTML=articles.length?'<div class="rows">'+articles.map(a=>`<div class="row"><h3><a href="${a.href}">${esc(a.title)}</a></h3><div><p>${esc(a.intro)}</p><div class="meta"><span>${esc(a.topic)}</span><time datetime="${a.date}">${a.date}</time></div></div></div>`).join('')+'</div>'
+ :'<div class="rows">'+['Building a marketplace backend','Designing a local AI assistant','Lessons from Duka.cu'].map(t=>`<div class="row"><h3>${t}</h3><div><p>Not written yet.</p><div class="meta"><span class="st concept">PLANNED</span></div></div></div>`).join('')+'</div>';
+
+$('capList').innerHTML=cap.map(([t,g])=>`<div><h3>${t}</h3><dl>${Object.entries(g).map(([l,items])=>`<dt>${l}</dt><dd style="margin:0" class="chips">${items.map(i=>`<span class="chip">${i}</span>`).join('')}</dd>`).join('')}</dl></div>`).join('');
+
+/* GitHub: public API, no token, cached in sessionStorage, fails gracefully. */
+const repoRow=(r,d)=>`<div class="row"><h3>${r.n}</h3><div><p>${esc(r.d)}</p><div class="meta">${d&&d.language?`<span>${esc(d.language)}</span>`:''}${d?`<span>Updated ${d.pushed_at.slice(0,10)}</span>`:''}</div><div class="links">${d?`<a href="${d.html_url}" target="_blank" rel="noopener">Repository</a>`:`<a href="${GH}?tab=repositories" target="_blank" rel="noopener">Browse profile</a>`}</div></div></div>`;
+$('repoList').innerHTML=repos.map(r=>repoRow(r,null)).join('');
+(async()=>{try{
+ let list=null;const c=sessionStorage.getItem('gh');
+ if(c){const o=JSON.parse(c);if(Date.now()-o.t<36e5)list=o.d}
+ if(!list){const res=await fetch('https://api.github.com/users/JohnAyo-dev/repos?per_page=100&sort=updated');
+  if(!res.ok)throw new Error(res.status);list=await res.json();sessionStorage.setItem('gh',JSON.stringify({t:Date.now(),d:list}))}
+ $('repoList').innerHTML=repos.map(r=>repoRow(r,list.find(x=>x.name.toLowerCase().replace(/[^a-z]/g,'').includes(r.m.replace(/[^a-z]/g,''))))).join('');
+}catch(e){}})();
+
+/* Other projects: filter by discipline plus text search. */
+const cats=['All',...new Set(more.map(m=>m[0]))];let cur='All';
+$('filters').innerHTML=cats.map(c=>`<button type="button" aria-pressed="${c==='All'}">${c}</button>`).join('');
+function draw(){const q=$('q').value.toLowerCase();
+ const rows=more.filter(m=>(cur==='All'||m[0]===cur)&&(m[1]+m[2]).toLowerCase().includes(q));
+ $('moreList').innerHTML=rows.map(m=>`<div class="row"><h3>${esc(m[1])}</h3><div><p>${esc(m[2])}</p><div class="meta"><span>${m[0]}</span>${badge(m[3])}</div></div></div>`).join('');
+ $('none').hidden=rows.length>0;$('moreList').hidden=!rows.length}
+$('filters').onclick=e=>{if(e.target.tagName!=='BUTTON')return;cur=e.target.textContent;
+ [...$('filters').children].forEach(b=>b.setAttribute('aria-pressed',b===e.target));draw()};
+$('q').oninput=draw;draw();
+</script>
+</body>
+</html>
